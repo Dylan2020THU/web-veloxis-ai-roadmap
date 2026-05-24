@@ -2,7 +2,6 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { useRoadmap } from "@/data/useRoadmap";
 import { MapCanvas, type MapCanvasHandle } from "@/map/MapCanvas";
 import { ZOOM } from "@/map/tokens";
-import { TopBar } from "@/components/TopBar";
 import { ZoomControls } from "@/components/ZoomControls";
 import { SidePanel } from "@/components/SidePanel";
 import { SearchBar } from "@/components/SearchBar";
@@ -68,7 +67,6 @@ export default function HomeMap() {
         onSelect={(id) => setSelectedId(id)}
         onZoomChange={setZoom}
       />
-      <TopBar />
       <ZoomControls
         zoom={zoom}
         onZoomIn={() => canvasRef.current?.zoomBy(1.4)}

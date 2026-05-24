@@ -41,7 +41,7 @@ export function SidePanel({ nodeId, layout, onClose, onJumpTo }: Props) {
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: 380, opacity: 0 }}
           transition={{ type: "spring", stiffness: 280, damping: 30 }}
-          className="absolute right-4 top-4 bottom-4 z-20 w-[360px] rounded-2xl bg-white/95 shadow-soft backdrop-blur"
+          className="absolute right-4 top-[100px] bottom-4 z-20 w-[360px] rounded-2xl bg-white/95 shadow-soft backdrop-blur"
         >
           <Inner
             node={node}
