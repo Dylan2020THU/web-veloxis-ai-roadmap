@@ -8,15 +8,18 @@
     "node": ">=18"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "data": "node scripts/opml-to-json.mjs",
     "predev": "node scripts/opml-to-json.mjs",
     "prebuild": "node scripts/opml-to-json.mjs",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "sync:site": "node scripts/sync-to-site.mjs",
+    "predeploy:site": "npm run build",
+    "deploy:site": "npm run sync:site",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "d3-hierarchy": "^3.1.2",
