@@ -5,11 +5,14 @@ const LOGO = import.meta.env.BASE_URL + "brand/logo-cn.png";
 // so we use absolute "/" URLs to escape both the sub-path and HashRouter.
 const HOME_ROOT = "/";
 
+// Mirror the marketing site's nav exactly so users see the same header
+// when bouncing between veloxisai.com and /roadmap/. Anchors target the
+// marketing-site sections (home/services/about/contact).
 const NAV_LINKS = [
   { label: "首页", href: `${HOME_ROOT}#home` },
-  // { label: "业务板块", href: `${HOME_ROOT}#services` },
-  // { label: "关于我们", href: `${HOME_ROOT}#about` },
-  // { label: "加入我们", href: `${HOME_ROOT}#contact` },
+  { label: "业务板块", href: `${HOME_ROOT}#services` },
+  { label: "关于我们", href: `${HOME_ROOT}#about` },
+  { label: "加入我们", href: `${HOME_ROOT}#contact` },
 ];
 
 export function TopBar() {
