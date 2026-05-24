@@ -24,6 +24,13 @@ export default {
       colors: {
         ink: "#1f2937",
         parchment: "#faf7ef",
+        // Marketing-site brand palette — kept here so the roadmap and the
+        // main veloxisai.com site share a single source of truth.
+        brand: {
+          blue: "#067efd", // 大川蓝 (matches CSS var --primary-blue)
+          "blue-hover": "#0569d2",
+          ink: "#1a1a1a", // 大川激流主文字色
+        },
       },
       boxShadow: {
         soft: "0 6px 20px -8px rgba(31, 41, 55, 0.18)",

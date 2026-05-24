@@ -9,6 +9,10 @@
   --ink-soft: #4b5563;
   --road: #f3e7c8;
   --water: #cfe6f0;
+  /* Fixed top-bar height. Consumed by TopBar.tsx (sets its own height),
+     SidePanel.tsx (uses it to offset top), and CourseDetail.tsx (uses
+     it for marginTop + height calc). Change here to update all three. */
+  --topbar-h: 76px;
 }
 
 html,

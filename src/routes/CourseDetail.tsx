@@ -63,8 +63,8 @@ export default function CourseDetail() {
     <div
       className="grid w-screen overflow-hidden"
       style={{
-        height: "calc(100vh - 76px)",
-        marginTop: "76px",
+        height: "calc(100vh - var(--topbar-h))",
+        marginTop: "var(--topbar-h)",
         gridTemplateColumns: "300px 1fr",
       }}
     >
